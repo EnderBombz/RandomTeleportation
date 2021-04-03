@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -31,35 +32,35 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony_publicized">
-      <HintPath>Libs\publicized_assemblies\0Harmony_publicized.dll</HintPath>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\Libs\0Harmony.dll</HintPath>
     </Reference>
-    <Reference Include="assembly_googleanalytics_publicized">
-      <HintPath>Libs\publicized_assemblies\assembly_googleanalytics_publicized.dll</HintPath>
+    <Reference Include="assembly_googleanalytics">
+      <HintPath>..\..\Libs\assembly_googleanalytics.dll</HintPath>
     </Reference>
-    <Reference Include="assembly_guiutils_publicized">
-      <HintPath>Libs\publicized_assemblies\assembly_guiutils_publicized.dll</HintPath>
+    <Reference Include="assembly_guiutils">
+      <HintPath>..\..\Libs\assembly_guiutils.dll</HintPath>
     </Reference>
-    <Reference Include="assembly_lux_publicized">
-      <HintPath>Libs\publicized_assemblies\assembly_lux_publicized.dll</HintPath>
+    <Reference Include="assembly_lux">
+      <HintPath>..\..\Libs\assembly_lux.dll</HintPath>
     </Reference>
-    <Reference Include="assembly_postprocessing_publicized">
-      <HintPath>Libs\publicized_assemblies\assembly_postprocessing_publicized.dll</HintPath>
+    <Reference Include="assembly_postprocessing">
+      <HintPath>..\..\Libs\assembly_postprocessing.dll</HintPath>
     </Reference>
-    <Reference Include="assembly_simplemeshcombine_publicized">
-      <HintPath>Libs\publicized_assemblies\assembly_simplemeshcombine_publicized.dll</HintPath>
+    <Reference Include="assembly_simplemeshcombine">
+      <HintPath>..\..\Libs\assembly_simplemeshcombine.dll</HintPath>
     </Reference>
-    <Reference Include="assembly_steamworks_publicized">
-      <HintPath>Libs\publicized_assemblies\assembly_steamworks_publicized.dll</HintPath>
+    <Reference Include="assembly_steamworks">
+      <HintPath>..\..\Libs\assembly_steamworks.dll</HintPath>
     </Reference>
-    <Reference Include="assembly_sunshafts_publicized">
-      <HintPath>Libs\publicized_assemblies\assembly_sunshafts_publicized.dll</HintPath>
+    <Reference Include="assembly_sunshafts">
+      <HintPath>..\..\Libs\assembly_sunshafts.dll</HintPath>
     </Reference>
-    <Reference Include="assembly_utils_publicized">
-      <HintPath>Libs\publicized_assemblies\assembly_utils_publicized.dll</HintPath>
+    <Reference Include="assembly_utils">
+      <HintPath>..\..\Libs\assembly_utils.dll</HintPath>
     </Reference>
-    <Reference Include="assembly_valheim_publicized">
-      <HintPath>Libs\publicized_assemblies\assembly_valheim_publicized.dll</HintPath>
+    <Reference Include="assembly_valheim">
+      <HintPath>..\..\Libs\assembly_valheim.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx.Harmony">
       <HintPath>Libs\publicized_assemblies\BepInEx.Harmony.dll</HintPath>

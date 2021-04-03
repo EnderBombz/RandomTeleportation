@@ -22,6 +22,7 @@ namespace RandomSpawn
             harmony.PatchAll();
         }
 
+
         [HarmonyPatch(typeof(Player), "OnDeath")]
         class OnDeath_patch
         {
@@ -34,6 +35,7 @@ namespace RandomSpawn
                 dead = true;
             }
         }
+
 
         [HarmonyPatch(typeof(Player), "OnSpawned")]
 
@@ -59,7 +61,6 @@ namespace RandomSpawn
             {
                 worldSpawnSetted = worldSpawn;
                 var stoneCircle = new List<Vector3>();
-
                 var lastHomePoint = worldSpawn;
                 if (__instance.m_firstSpawn)
                 {
@@ -74,21 +75,30 @@ namespace RandomSpawn
                     int index = random.Next(stoneCircle.Count);
                     __instance.transform.position = stoneCircle[index];
                     profile.SetHomePoint(stoneCircle[index]);
+
                 }
                 Vector3 customSpawnpoint = Game.instance.m_playerProfile.GetCustomSpawnPoint();
-                Bed haveBed = verifyBedNearby(customSpawnpoint,5f);
+
+                Bed haveBed = verifyBedNearby(customSpawnpoint, 5f);
 
                 if (haveBed == null && dead == true)
                 {
                     __instance.transform.position = worldSpawnSetted;
                     dead = false;
                 }
+
+
+                //KG is beauty
+
             }
+
             static void Prefix(Player __instance)
             {
                 Debug.Log("iniciando debug...");
                 Query(__instance);
                 Debug.Log("finalizando debug...");
+
+
             }
         }
 
